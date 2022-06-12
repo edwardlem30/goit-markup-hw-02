@@ -1,0 +1,85 @@
+
+:root {
+        --hero-bcg: #2F303A;
+        --accent-txt-color: #2196F3;
+        --logo-txt-color: #000000;
+        --subtitle-txt: #212121;
+        --primary-txt-color: #757575;
+        --background: #F5F4FA;
+        --bcg-color: #FFFFFF;
+        }
+
+body {
+    background-color: var(--bcg-color)
+}
+/* logo */
+.header-logo {color: var(--logo-txt-color);
+text-decoration: none;}
+.footer-logo {color: var(--bcg-color);
+text-decoration: none;}
+
+.logo-cl {
+    color: var(--accent-txt-color);
+}
+
+/* Header */
+.header-link.current {
+    color: var(--accent-txt-color);
+}
+
+.header-link {
+    color: var(--subtitle-txt);
+    text-decoration: none;
+}
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-txt-color);
+}
+/* link to page */
+.link, .card-text {
+    color: var(--primary-txt-color);
+}
+.link {text-decoration: none;}
+.link-map {color: var(--bcg-color);
+text-decoration: none;}
+
+.link:hover,
+.link:focus,
+.link-map:hover
+ {
+    color: var(--accent-txt-color);
+}
+/* Block Hero */
+.hero {
+    background-color: var(--hero-bcg);
+}
+.hero-title {color: var(--bcg-color);}
+
+
+.button {background-color: var(--background); color: var(--subtitle-txt);}
+.button.primary {
+    color: var(--bcg-color);
+    background-color: var(--accent-txt-color);
+}
+
+/* Benefits */
+.section-title,
+.work-title,
+.command-title,
+.subtitle
+{color: var(--subtitle-txt);}
+
+.section-item .text,
+.command-item .text {color: var(--primary-txt-color);}
+
+/* Filter on page two */
+.filter-item, .card-title {
+    color: var(--subtitle-txt);
+}
+
+.filter-item:hover,
+.filter-item:focus {
+    color: var(--accent-txt-color);
+}
+/* Footer */
+.footer {background-color: var(--hero-bcg);}
