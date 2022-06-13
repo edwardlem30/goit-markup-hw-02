@@ -42,8 +42,7 @@ body
 /* logo */
 .header-logo 
 {
-    font-family: 'Raleway';
-    font-style: normal;
+    font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -55,8 +54,7 @@ body
 
 .footer-logo 
 {
-    font-family: 'Raleway';
-    font-style: normal;
+    font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -110,7 +108,7 @@ body
     text-decoration: none;
 }
 
-.link:hover, .link:focus, .link-map:hover
+.link:hover, .link:focus, .link-map:hover, .link-map:focus
 {  color: var(--accent-txt-color);
 }
 /* Block Hero */
@@ -212,6 +210,7 @@ body
 
 .filter-btn
 {
+    cursor: pointer;
     text-transform: capitalize;
     color: var(--subtitle-txt);
 }
