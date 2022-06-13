@@ -1,85 +1,270 @@
+/* Fonts */
+:root 
+{
+    --main-font: 'Roboto';
+    --secondary-font: 'Raleway';
+}
+/* Text colors */ 
+:root 
+{
+    --accent-txt-color: #2196F3;
+    --logo-txt-color: #000000;
+    --subtitle-txt: #212121;
+    --primary-txt-color: #757575;
+}
 
-:root {
+/* Background colors */
+:root 
+{
         --hero-bcg: #2F303A;
-        --accent-txt-color: #2196F3;
-        --logo-txt-color: #000000;
-        --subtitle-txt: #212121;
-        --primary-txt-color: #757575;
         --background: #F5F4FA;
         --bcg-color: #FFFFFF;
-        }
+}
+/* Other */
+:root 
+{
+    --main-font-size: 16px;
+}
 
-body {
+body 
+{
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    line-height: 1.88;
     background-color: var(--bcg-color)
 }
+/* Header */
+.header-item, .contact-link, .contact-tel 
+{
+    text-decoration: none;
+    list-style: none;
+}
 /* logo */
-.header-logo {color: var(--logo-txt-color);
-text-decoration: none;}
-.footer-logo {color: var(--bcg-color);
-text-decoration: none;}
+.header-logo 
+{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: var(--logo-txt-color);
+}
 
-.logo-cl {
+.footer-logo 
+{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: var(--bcg-color);
+}
+
+.logo-cl 
+{
     color: var(--accent-txt-color);
 }
 
 /* Header */
-.header-link.current {
+
+.header-link.current 
+{
+    letter-spacing: 0.02em;
     color: var(--accent-txt-color);
 }
 
-.header-link {
-    color: var(--subtitle-txt);
+.header-link 
+{
     text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    color: var(--subtitle-txt);
+    
 }
 .header-link:hover,
-.header-link:focus {
+.header-link:focus 
+{
     color: var(--accent-txt-color);
 }
+
 /* link to page */
-.link, .card-text {
+.link, .card-text 
+{
     color: var(--primary-txt-color);
 }
-.link {text-decoration: none;}
-.link-map {color: var(--bcg-color);
-text-decoration: none;}
+.link 
+{
+    font-family: var(--main-font);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+.link-map 
+{
+    color: var(--bcg-color); 
+    text-decoration: none;
+}
 
-.link:hover,
-.link:focus,
-.link-map:hover
- {
-    color: var(--accent-txt-color);
+.link:hover, .link:focus, .link-map:hover
+{  color: var(--accent-txt-color);
 }
 /* Block Hero */
-.hero {
+.hero 
+{
     background-color: var(--hero-bcg);
 }
-.hero-title {color: var(--bcg-color);}
+.hero-title 
+{
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--bcg-color);
+}
 
 
-.button {background-color: var(--background); color: var(--subtitle-txt);}
-.button.primary {
+.button 
+{
+    background-color: var(--background); 
+    color: var(--subtitle-txt);
+}
+.button.primary 
+{
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: var(--main-font-size);
+    line-height: 1.88;
+    text-align: center;
+    text-transform: capitalize;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     color: var(--bcg-color);
     background-color: var(--accent-txt-color);
 }
 
 /* Benefits */
-.section-title,
-.work-title,
-.command-title,
-.subtitle
-{color: var(--subtitle-txt);}
-
-.section-item .text,
-.command-item .text {color: var(--primary-txt-color);}
-
-/* Filter on page two */
-.filter-item, .card-title {
+.work-title, .command-title
+{
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-align: center;
+    letter-spacing: 0.03em;
     color: var(--subtitle-txt);
 }
 
-.filter-item:hover,
-.filter-item:focus {
-    color: var(--accent-txt-color);
+.section-title 
+{
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--subtitle-txt); 
+}
+
+.section-item .text 
+{   
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--primary-txt-color);
+}
+.command-item .subtitle {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: var(--main-font-size);
+    line-height: 1.19;
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+    color: var(--subtitle-txt);
+}
+.command-item .text 
+{
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-txt-color);
+}
+
+.section-list, .work-list, 
+.command-list, .header-list, 
+.filter-list, .card-list, .list 
+{
+    list-style: none;
+}
+
+/* Filter on page two */
+
+.filter-btn
+{
+    text-transform: capitalize;
+    color: var(--subtitle-txt);
+}
+.filter-btn,
+.card-title .ignor,
+.card-text .ignor 
+{
+    text-transform: none;
+}
+.filter-btn
+{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: var(--main-font-size);
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;;
+}
+.card-title 
+{
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    text-transform: capitalize;
+    letter-spacing: 0.06em;
+    color: var(--subtitle-txt);
+}
+.card-text 
+{
+    font-family: var(--main-font);
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+}
+
+.filter-btn:hover,
+.filter-btn:focus 
+{
+    text-transform: capitalize;
+    background: var(--accent-txt-color);
+    color: var(--bcg-color);
 }
 /* Footer */
-.footer {background-color: var(--hero-bcg);}
+.footer 
+{
+    background-color: var(--hero-bcg);
+}
+.contact .item 
+{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}

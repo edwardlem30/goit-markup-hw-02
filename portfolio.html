@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
@@ -44,11 +56,15 @@
       <section class="filter">
         <h1 hidden>Наши работы</h1>
         <ul class="filter-list">
-          <li class="filter-item">Все</li>
-          <li class="filter-item">Веб-сайты</li>
-          <li class="filter-item">Приложения</li>
-          <li class="filter-item">Дизайн</li>
-          <li class="filter-item">Маркетинг</li>
+          <li><button class="filter-btn" type="button">Все</button></li>
+          <li>
+            <button class="filter-btn" type="button">
+              Веб-<span class="ignor">сайты</span>
+            </button>
+          </li>
+          <li><button class="filter-btn" type="button">Приложения</button></li>
+          <li><button class="filter-btn" type="button">Дизайн</button></li>
+          <li><button class="filter-btn" type="button">Маркетинг</button></li>
         </ul>
       </section>
       <!-- Cards -->
@@ -59,14 +75,17 @@
             <article class="card-art">
               <img class="card-img" src="./images-2/img-1.jpg" alt="" />
               <h1 class="card-title">Технокряк</h1>
-              <p class="card-text">Веб-сайт</p>
+              <p class="card-text">Веб-<span class="ignor">сайт</span></p>
             </article>
           </li>
           <li class="card-item">
             <article class="card-art">
               <img class="card-img" src="./images-2/img-2.jpg" alt="" />
               <h1 class="card-title">
-                Постер <span lang="en">Orlean vs Golden Star</span>
+                Постер
+                <span lang="en"
+                  >Orlean <span class="ignor">vs</span> Golden Star</span
+                >
               </h1>
               <p class="card-text">Дизайн</p>
             </article>
@@ -97,8 +116,10 @@
           <li class="card-item">
             <article class="card-art">
               <img class="card-img" src="./images-2/img-6.jpg" alt="" />
-              <h1 class="card-title" lang="en">Inspiration has no Borders</h1>
-              <p class="card-text">Веб-сайт</p>
+              <h1 class="card-title" lang="en">
+                Inspiration <span class="ignor">has no</span> Borders
+              </h1>
+              <p class="card-text">Веб-<span class="ignor">сайт</span></p>
             </article>
           </li>
           <li class="card-item">
