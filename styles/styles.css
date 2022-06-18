@@ -38,7 +38,7 @@ body
     color: var(--logo-txt-color);
 }
 
-.header .logo, .footer>.logo 
+.header.logo, .footer>.logo 
 {
     color: var(--bcg-color);
 }
